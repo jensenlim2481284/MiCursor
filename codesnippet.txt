@@ -1,0 +1,12 @@
+document.head.insertAdjacentHTML('beforeend','<link rel="stylesheet" href="https://localhost:3000/src/assets/inject.css">');
+
+
+var script = document.createElement('script');
+script.src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js";
+document.head.appendChild(script); 
+
+
+var script = document.createElement('script');
+script.type = "module";
+script.src = "https://localhost:3000/src/assets/inject.js";
+document.head.appendChild(script); 

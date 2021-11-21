@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/mirotone@2.0.0/dist/styles.css"/>
+    <link rel="stylesheet" href="/src/assets/style.css" />
+    <script src="https://miro.com/app/static/sdk/v2/miro.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script type='module' src="/src/assets/index.js"></script>
+
+  </head>
+  <body>
+    <div class="grid wrapper">
+        <div class="cs1 ce12 text-center">
+            <img id='cursor' src="/src/assets/cursor.gif" />
+            <img src="/src/assets/girl.png" />
+        </div>
+        <div class="cs1 ce12 ">
+            <div class="toggle">
+                <input type="radio" name="cursorToggle"  id="focusToggle" checked="checked" />
+                <label for="focusToggle">Focus Effect</label>
+                <input type="radio" name="cursorToggle"  id="pinToggle" />
+                <label for="pinToggle">Pin Effect</label>
+            </div>
+        </div>
+        <div class='cs1 ce12 setting-block'>
+            <div class='focus-setting'>
+                <p> Overlay Power </p>
+                <input type="range" min="1" max="10" step="1" value="0" id='focusOverlay'>
+                <p> Focus Radius </p>
+                <input type="range" min="1" max="10" step="1" value="0" id='focusRadius'>
+            </div>
+            <div class='pin-setting'>
+                <p> Pin Radius </p>
+                <input type="range" min="1" max="10" step="1" value="0" id='pinRadius'>
+                <p> Pin Color </p>
+                <input type="color"  id="pinColor" value="#ff0000">
+            </div>
+        </div>
+        <div class='cs1 ce12 footer-block'>
+            Hold "Alt" key to focus cursor 
+        </div>
+    </div>  
+  </body>
+</html>
