@@ -1,9 +1,4 @@
 
-![N|Solid](https://raw.githubusercontent.com/jensenlim2481284/MiCursor/master/src/MiCursor%20Logo.png)
-
-
-
-
 # MiCursor
 MiCursor is a simple yet useful tool that apply focus & pin effect on the cursor that always follows the cursor on mouse movement.
 
